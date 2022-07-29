@@ -1,0 +1,74 @@
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+.menu{
+  background-color: #4D9AAD;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+.logo h1{
+  color: #ffffff;
+}
+.nav-links ul{
+  display: flex;
+  list-style: none;
+}
+.nav-links ul li{
+  margin: 1em;
+}
+.nav-links ul li a{
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-pic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em;
+}
+.profileimage img{
+  height: 200px;
+  width: 150px;
+}
+.intro{
+  display: flex;
+  padding: 2em;
+}
+.profile-intro h1{
+  color: #4D9AAD;
+}
+
+.intro-text{
+  text-align: center;
+  margin-top: 0em;
+}
+.textimg{
+  display: flex;
+  margin-top: -0.5em;
+}
+.textimg img{
+  width: 20px;
+  height: 20px;
+}
+.aboutMe{
+  display: flex;
+  justify-content: space-between;
+  background-color: #4D9AAD;
+  padding-left: 8em;
+  padding-top: 5em;
+  padding-right: 15em;
+  padding-bottom: 5em;
+}
+h3{
+  color: #ffffff;
+}
+.aboutInfo p{
+  color: #ffffff;
+}
