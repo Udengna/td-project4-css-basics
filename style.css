@@ -89,6 +89,10 @@ h2{
   text-align: center;
   color: #ffffff;
 }
+
+.top-text{
+  font-weight: 800;
+}
 .serviceitem{
   width: 25%;
   background-color: #324A50;
