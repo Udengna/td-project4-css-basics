@@ -72,3 +72,54 @@ h3{
 .aboutInfo p{
   color: #ffffff;
 }
+.services{
+
+}
+
+h2{
+  color: #4D9AAD;
+  padding-left: 5em;
+  padding-top: 2em;
+}
+.serviceitems{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8em;
+  margin-top: -3em;
+  padding-top: 5em;
+  padding-right: 15em;
+  padding-bottom: 5em;
+  text-align: center;
+  color: #ffffff;
+}
+.serviceitem{
+  width: 25%;
+  background-color: #324A50;
+  border-radius: 10px;
+  padding: 1em;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4D9AAD;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.footer ul{
+  display: flex;
+  list-style: none;
+}
+.footer ul li a{
+  text-decoration: none;
+  margin-right: 1em;
+}
+.footer p{
+  color: #ffffff;
+}
+.footer ul li a img{
+  width: 20px;
+  height: 20px;
+}
