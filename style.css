@@ -45,13 +45,23 @@ body{
   display: flex;
   padding: 2em;
 }
+
+.profile-intro{
+  text-align: center;
+  width: 40%;
+}
 .profile-intro h1{
   color: #4D9AAD;
+}
+
+.profile-intro img{
+  width: 20px;
 }
 
 .intro-text{
   text-align: center;
   margin-top: 0em;
+  display: inline;
 }
 .textimg{
   display: flex;
