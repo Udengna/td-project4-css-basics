@@ -112,7 +112,39 @@ h2{
   background-color: #324A50;
   border-radius: 10px;
   padding: 1em;
+  -webkit-animation: roll-in-left 2s ease-out both;
 }
+.serviceitem:hover{
+  background-color: #0993b6;
+  transition: background 500ms;
+
+}
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
 .footer{
   display: flex;
   flex-direction: column;
@@ -138,3 +170,6 @@ h2{
   width: 20px;
   height: 20px;
 }
+
+
+
