@@ -1,84 +1,62 @@
-body{
+*{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
 }
-.container{
-  height: 100%;
-  width: 100%;
+body{
+  margin: 0px;
+  padding: 0px;
 }
-
-.menu{
+.header{
   background-color: #4D9AAD;
   display: flex;
   justify-content: space-between;
-  padding-left: 8em;
-  padding-right: 8em;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
-.logo h1{
+.header h1{
   color: #ffffff;
 }
-.nav-links ul{
-  display: flex;
-  list-style: none;
+nav{
+  margin-top: 2em;
+  font-weight: 800;
 }
-.nav-links ul li{
-  margin: 1em;
-}
-.nav-links ul li a{
+nav a{
   color: #ffffff;
-  list-style: none;
   text-decoration: none;
-  font-weight: bold;
+  margin-right: 1em;
 }
-
 .profile-pic{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4em;
+    margin: 0 auto;
 }
-.profileimage img{
+.profpic{
   height: 200px;
   width: 150px;
   border-radius: 100%;
 }
-.intro{
-  display: flex;
-  padding: 2em;
-}
-
-.profile-intro{
-  text-align: center;
-  width: 40%;
-}
-.profile-intro h1{
-  color: #4D9AAD;
-}
-
-.profile-intro img{
-  width: 20px;
-}
-
 .intro-text{
-  text-align: center;
-  margin-top: 0em;
-  display: inline;
+  display: inline-block;
 }
-.textimg{
-  display: flex;
-  margin-top: -0.5em;
-}
-.textimg img{
+.icon{
   width: 20px;
-  height: 20px;
 }
+
 .aboutMe{
-  display: flex;
-  justify-content: space-between;
   background-color: #4D9AAD;
-  padding-left: 8em;
-  padding-top: 5em;
-  padding-right: 15em;
-  padding-bottom: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  padding-left: 4em;
+  padding-right: 4em;
+  
 }
 h3{
   color: #ffffff;
@@ -86,19 +64,21 @@ h3{
 .aboutInfo p{
   color: #ffffff;
 }
-
+.aboutContact{
+  margin-top: 2em;
+}
+.services{
+  margin: 0 auto;
+  padding-left: 4em;
+  padding-right: 4em;
+}
 h2{
   color: #4D9AAD;
-  padding-left: 5em;
   padding-top: 2em;
+  margin: 0 auto;
+  
 }
 .serviceitems{
-  display: flex;
-  justify-content: space-between;
-  padding-left: 8em;
-  margin-top: -3em;
-  padding-top: 5em;
-  padding-right: 15em;
   padding-bottom: 5em;
   text-align: center;
   color: #ffffff;
@@ -108,41 +88,17 @@ h2{
   font-weight: 800;
 }
 .serviceitem{
-  width: 25%;
   background-color: #324A50;
   border-radius: 10px;
+  margin-top: 2em;
   padding: 1em;
+  animation: roll-in-left 2s ease-out both;
   -webkit-animation: roll-in-left 2s ease-out both;
 }
 .serviceitem:hover{
   background-color: #0993b6;
   transition: background 500ms;
 
-}
-
-@-webkit-keyframes roll-in-left {
-  0% {
-    -webkit-transform: translateX(-800px) rotate(-540deg);
-            transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-            transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-@keyframes roll-in-left {
-  0% {
-    -webkit-transform: translateX(-800px) rotate(-540deg);
-            transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-            transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
 }
 
 .footer{
@@ -171,5 +127,80 @@ h2{
   height: 20px;
 }
 
+@media screen and (min-width: 600px) {
+  .header{
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .profile-pic{
+      width: 40%;
+      text-align: center;
+  }
+  .aboutMe{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 10em;
+      padding-right: 10em;
+      padding-top: 5em;
+      padding-bottom: 5em;
+
+  }
+  .aboutInfo{
+    width: 40%;
+  }
+  .aboutInfo h3{
+    width: 60%;
+  }
+  .aboutContact{
+    margin-right: 15em;
+    margin-top: 0px;
+  }
+
+  .services{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .serviceitems{
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceitem{
+    width: 25%;
+  }
+  .serviceitem{
+    animation: roll-in-left 2s ease-out both;
+    -webkit-animation: roll-in-left 2s ease-out both;
+  }
+
+  @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  
 
 
+}
