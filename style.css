@@ -21,13 +21,21 @@ body{
   color: #ffffff;
 }
 nav{
-  margin-top: 2em;
+  margin-top: 1.5em;
   font-weight: 800;
 }
 nav a{
   color: #ffffff;
   text-decoration: none;
-  margin-right: 1em;
+  padding: 1.5em;
+}
+nav a:hover{
+  background-color: #ffffff;
+  color: #4D9AAD;
+}
+nav a:active{
+  background-color: #324A50 ;
+  color: #4D9AAD;
 }
 .profile-pic{
     display: flex;
